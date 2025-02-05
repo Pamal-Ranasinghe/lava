@@ -1,0 +1,13 @@
+{
+    "name": "volcano/lava",
+    "description": "A PHP framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pamal Ranasinghe"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
