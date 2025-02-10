@@ -1,13 +1,40 @@
 {
     "name": "volcano/lava",
     "description": "A PHP framework",
+    "keywords": ["framework", "php", "lava", "magmacore"],
     "type": "library",
     "license": "MIT",
+    "readme" : "",
+    "time" : "",
+    "support" : {
+        "issues" : "https://github.com/Pamal-Ranasinghe/lava/issues",
+        "source" : "https://github.com/Pamal-Ranasinghe/lava",
+        "wiki" : "https://github.com/Pamal-Ranasinghe/lava/wiki"
+    },
     "authors": [
         {
-            "name": "Pamal Ranasinghe"
+            "name": "Pamal Ranasinghe",
+            "role" : "developer"
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+    "require": {
+        "php" : "7.4.2|^8.0",
+        "ext-mbstring" : "*",
+        "ext-iconv" : "*",
+        "ext-pdo" : "*",
+        "ext-json" : "*",
+        "ext-curl" : "*",
+        "ext-simplexml" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "magma\\": "src/Magma"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magma\\Tests\\": "tests/"
+        }
+    }
 }
